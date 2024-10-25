@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sacramento&display=swap");
+
+/* BOTOES ------------------------------------------------------------------------------------ */
+.btn-criarTarefa {
+  background-color: gray;
+  color: white;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btn-editar {
+  width: 25px;
+  color: rgb(34, 34, 99);
+  cursor: pointer;
+}
+.btn-editar:hover {
+  width: 30px;
+}
+.btn-deletar-tarefa {
+  width: 25px;
+  color: rgb(189, 11, 11);
+  cursor: pointer;
+}
+.btn-deletar-tarefa:hover {
+  width: 30px;
+}
+.btn-mostrarSubtarefa {
+  width: 25px;
+  cursor: pointer;
+}
+.btn-mostrarSubtarefa:hover {
+  width: 30px;
+  cursor: pointer;
+}
+.btn-esconderSubtarefa {
+  width: 20px;
+  cursor: pointer;
+}
+.btn-esconderSubtarefa:hover {
+  color: rgb(34, 34, 99);
+}
+.btn-editarSubtarefa {
+  cursor: pointer;
+}
+.btn-deletarSubtarefa {
+  cursor: pointer;
+}

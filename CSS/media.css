@@ -1,0 +1,253 @@
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+  header {
+    font-size: 20px;
+    height: 70px;
+  }
+
+  form input {
+    width: 90%;
+  }
+  section {
+    padding: 5px;
+  }
+  .lista-completa {
+    display: flex;
+    flex-direction: column;
+  }
+  .tarefa {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "check text sub"
+      "Msub text del";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+  .text-li {
+    grid-area: text;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    width: 210px;
+  }
+
+  .checkbox {
+    grid-area: check;
+    width: 15px;
+    height: 15px;
+  }
+
+  #container-subtarefas {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    padding: 10px;
+  }
+  .input-subtarefas {
+    padding: 5px;
+    font-weight: 600;
+
+    font-size: 20px;
+    width: 80%;
+    height: 20px;
+    border-radius: 8px;
+  }
+  .subtarefas li {
+    width: 100%;
+    padding: 0;
+  }
+
+  .subtarefas li p {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(34, 34, 99);
+  }
+  #subLi {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/* BOTOES*/
+
+@media only screen and (max-width: 600px) {
+  .btn-editar {
+    grid-area: sub;
+    width: 20px;
+  }
+  .btn-editar:hover {
+    width: 25px;
+  }
+
+  .btn-deletar-tarefa {
+    grid-area: del;
+    width: 20px;
+  }
+  .btn-deletar-tarefa:hover {
+    width: 25px;
+  }
+  .btn-mostrarSubtarefa {
+    grid-area: Msub;
+    width: 20px;
+    cursor: pointer;
+  }
+  .btn-mostrarSubtarefa:hover {
+    width: 25px;
+  }
+}
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 750px) {
+  header {
+    font-size: 20px;
+    height: 70px;
+  }
+  #container-subtarefas {
+    width: 60%;
+    padding: 10px;
+  }
+  .tarefa {
+    width: 100%;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+}
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1000px) {
+  .tarefa {
+    width: 80%;
+  }
+  .btn-editarSubtarefa {
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .tarefa {
+    width: 80%;
+  }
+  #container-subtarefas {
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .tarefa {
+    width: 90%;
+  }
+  header {
+    font-size: 50px;
+    height: 110px;
+  }
+  form input {
+    border: 3px solid rgb(34, 34, 99);
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(34, 34, 99);
+    font-family: "Amatic SC", sans-serif;
+    margin-right: 10px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+  }
+  .btn-criarTarefa {
+    background-color: gray;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .tarefa {
+    width: 80%;
+  }
+  .text-li {
+    font-size: 45px;
+    font-weight: 650;
+
+    padding: 10px;
+  }
+  .checkbox {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.393);
+    width: 40px;
+    height: 40px;
+  }
+  .btn-editar {
+    width: 60px;
+  }
+  .btn-editar:hover {
+    width: 65px;
+  }
+  .btn-deletar-tarefa {
+    width: 60px;
+  }
+  .btn-deletar-tarefa:hover {
+    width: 65px;
+  }
+  .btn-mostrarSubtarefa {
+    width: 60px;
+  }
+  .btn-mostrarSubtarefa:hover {
+    width: 65px !important;
+  }
+
+  .btn-esconderSubtarefa {
+    width: 60px;
+  }
+
+  .btn-editarSubtarefa {
+    width: 60px !important;
+  }
+
+  .btn-deletarSubtarefa {
+    width: 60px !important;
+  }
+
+  #container-subtarefas {
+    width: 70%;
+    padding: 10px;
+    gap: 20px;
+  }
+  .input-subtarefas {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 45px;
+    width: 100% !important;
+    height: 50px;
+  }
+  .subtarefas li {
+    width: 80%;
+    padding: 30px;
+  }
+  #subLi {
+    min-height: 65px;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .subtarefas li p {
+    width: 90%;
+
+    font-size: 40px;
+  }
+  .sub-check {
+    width: 40px;
+    height: 40px;
+  }
+}
