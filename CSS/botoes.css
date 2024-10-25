@@ -35,15 +35,19 @@
   cursor: pointer;
 }
 .btn-esconderSubtarefa {
-  width: 20px;
+  width: 10% !important;
   cursor: pointer;
+  margin-left: -35px;
 }
 .btn-esconderSubtarefa:hover {
   color: rgb(34, 34, 99);
 }
 .btn-editarSubtarefa {
+  width: 10% !important;
   cursor: pointer;
 }
 .btn-deletarSubtarefa {
+  width: 20x !important;
   cursor: pointer;
+  color: rgb(189, 11, 11);
 }

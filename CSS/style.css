@@ -5,18 +5,20 @@
 }
 body {
   font-family: "Amatic SC", sans-serif;
-
+  display: block;
   margin: 0;
   padding: 0;
   background-image: url(../img/fundomesa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 header {
+  position: fixed;
   width: 100%;
   display: flex;
-  flex: 1;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -25,11 +27,15 @@ header {
   font-size: 30px;
   height: 100px;
 }
+header h1 {
+  width: 50%;
+}
 
 form {
   display: flex;
   justify-content: center;
   padding: 10px;
+  width: 50%;
 }
 form input {
   border: 2px solid rgb(34, 34, 99);
@@ -48,6 +54,7 @@ section {
   display: flex;
 }
 .lista-completa {
+  margin-top: 100px;
   gap: 5px;
   display: flex;
   flex-direction: column;
@@ -101,22 +108,27 @@ section {
   background-attachment: local;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 600px;
+  width: 60%;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.566);
   margin-top: -10px;
 }
 
-.input-subtarefas {
+#input-subtarefas {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   font-weight: 600;
   font-family: "Amatic SC", sans-serif;
-  font-size: 25px;
-  width: 80%;
-  height: 30px;
+  font-size: 20px;
+  width: 60% !important;
+  height: 30px !important;
   border-radius: 10px;
   border: 1px solid rgb(34, 34, 99);
   outline: none;
@@ -124,8 +136,10 @@ section {
 }
 .subtarefas {
   display: flex;
-  justify-content: left;
+  justify-content: space-around !important;
   align-items: center;
+  text-align: center;
+  width: 80%;
 }
 .subtarefas li {
   display: flex;
@@ -137,7 +151,7 @@ section {
 }
 .subtarefas li p {
   flex: 1;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: rgb(150, 22, 22);
 }

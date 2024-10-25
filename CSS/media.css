@@ -1,3 +1,23 @@
+@media only screen and (max-width: 335px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 150px !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10;
+  }
+  header h1 {
+    height: 30px;
+    width: 90%;
+  }
+  form {
+    width: 100%;
+  }
+  .lista-completa {
+    margin-top: 150px;
+  }
+}
 /* Smartphones (600px para baixo) */
 @media only screen and (max-width: 600px) {
   body {
@@ -37,7 +57,7 @@
     font-size: 20px;
     font-weight: 500;
     padding: 5px;
-    width: 210px;
+    width: 90%;
   }
 
   .checkbox {
@@ -82,7 +102,6 @@
   }
 }
 /* BOTOES*/
-
 @media only screen and (max-width: 600px) {
   .btn-editar {
     grid-area: sub;
@@ -108,8 +127,17 @@
     width: 25px;
   }
 }
+@media only screen and (min-width: 630px) {
+  .tarefa {
+    width: 80%;
+  }
+  #container-subtarefas {
+    width: 70%;
+    padding: 10px;
+  }
+}
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 720px) {
   header {
     font-size: 20px;
     height: 70px;
@@ -132,17 +160,19 @@
     width: 80%;
   }
   .btn-editarSubtarefa {
-    width: 60px;
+    width: 40px;
   }
-}
 
-@media only screen and (min-width: 630px) {
-  .tarefa {
-    width: 80%;
+  .btn-esconderSubtarefa {
+    width: 30px !important;
   }
-  #container-subtarefas {
-    width: 70%;
-    padding: 10px;
+
+  .btn-editarSubtarefa {
+    width: 30px !important;
+  }
+
+  .btn-deletarSubtarefa {
+    width: 40px !important;
   }
 }
 
@@ -155,15 +185,9 @@
     height: 110px;
   }
   form input {
-    border: 3px solid rgb(34, 34, 99);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-    color: rgb(34, 34, 99);
-    font-family: "Amatic SC", sans-serif;
-    margin-right: 10px;
-    outline: none;
-    border-radius: 5px;
-    padding: 5px;
+
     width: 50%;
   }
   .btn-criarTarefa {
@@ -207,15 +231,15 @@
   }
 
   .btn-esconderSubtarefa {
-    width: 60px;
+    width: 40px;
   }
 
   .btn-editarSubtarefa {
-    width: 60px !important;
+    width: 20px !important;
   }
 
   .btn-deletarSubtarefa {
-    width: 60px !important;
+    width: 40px !important;
   }
 
   #container-subtarefas {
@@ -227,7 +251,7 @@
     padding: 5px;
     font-weight: 600;
     font-size: 45px;
-    width: 100% !important;
+    width: 100%;
     height: 50px;
   }
   .subtarefas li {
